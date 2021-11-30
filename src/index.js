@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Emojis from "./components/Emoji"
+import Counter from "./components/Counter"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Emojis/>
+    <Counter/>
   </React.StrictMode>,
   document.getElementById('root')
 );
