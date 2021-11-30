@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Emojis from "./components/Emoji"
+import RadioButton from "./components/RadioButton"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Emojis/>
+    <RadioButton/>
   </React.StrictMode>,
   document.getElementById('root')
 );
