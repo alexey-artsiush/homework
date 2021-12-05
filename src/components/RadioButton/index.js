@@ -1,17 +1,18 @@
 import React, {useState} from "react";
 import "./radiobutton.css"
-const RadioButton = () => {
+const titles =  ["⏯️", "⏹️", "⏸️"]
 
-  const [value, setValue] = useState("⏯️")
+const RadioButton = () => {
   const [index, setIndex] = useState(0)
 
-  const onButtonClick = () =>{
-    setIndex(index === 2 ? 0 : index + 1);
-    setValue(["⏯️", "⏹️", "⏸️"][index]);
+  const onClick = () =>{
+    setIndex((index + 1) % titles.length);
   }
 
   return (
-    <div><button onClick={onButtonClick}>{value} </button></div>
+    <div>
+      <button onClick={onClick}>{titles[index]} </button>
+    </div>
   )
 }
 
