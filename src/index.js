@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Emojis from "./components/Emoji"
+import Posts from "./components/Posts"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Emojis/>
+    <Posts/>
   </React.StrictMode>,
   document.getElementById('root')
 );
