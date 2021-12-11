@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Loginclass from "./components/Loginclass"
 
+import './index.css';
+import Navigator from './navigation';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Loginclass/>
+    <Navigator />
   </React.StrictMode>,
   document.getElementById('root')
 );
