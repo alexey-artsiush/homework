@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './components/TimePicker/TimePicker.css';
 import TimePicker from "./components/TimePicker"
-
+import RadioButton from "./components/RadioButton"
 
 ReactDOM.render(
   <React.StrictMode>
     <TimePicker/>
+    <RadioButton/>
   </React.StrictMode>,
   document.getElementById('root')
 );
