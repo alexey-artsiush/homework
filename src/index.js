@@ -8,7 +8,6 @@ ReactDOM.render(
   <React.StrictMode>
     <TimePicker/>
     <RadioButton/>
+    <Loginclass/>
   </React.StrictMode>,
-  document.getElementById('root')
 );
-
