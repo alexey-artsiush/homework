@@ -1,5 +1,6 @@
-import React, {Component, useEffect} from "react";
+import React, {useEffect} from "react";
 import { useState } from "react/cjs/react.development";
+import { Link } from "react-router-dom";
 
 // class Posts extends Component {
 // state = {
@@ -46,12 +47,13 @@ import { useState } from "react/cjs/react.development";
 const Posts = () =>{
 
   const [posts, setPosts] = useState([])
+
   useEffect(() => {
     getPosts()
   }, [])
 
 
-  const getPosts = async() => {
+  const getPosts = async(pageNumber = 1) => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts")  
     const data = await response.json()
     setPosts(data)
@@ -69,19 +71,21 @@ const Posts = () =>{
         'Content-Type': 'application/json'
       }
     })
-    const data = await response.json() 
-    console.log(data)
-    setPosts( [...posts, data] ); // через push нельзя! это мутабельное изменение ( и там и там)
+    getPosts()
   }
 
   return (
       <div>
       {posts.map((item) => {
         return (
-        <div key={item.id}>
+          <Link
+          key={item.id}
+          to={`/posts/${item.id}`}
+          className="post"
+          >
           <h2>{item.title}</h2>
           <span>{item.body}</span>
-        </div>
+        </Link>
       )
     })}
     <button onClick={createPost}>Create</button>

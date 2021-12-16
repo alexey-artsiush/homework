@@ -7,4 +7,6 @@ ReactDOM.render(
   <React.StrictMode>
     <TimePicker/>
   </React.StrictMode>,
+  document.getElementById('root')
 );
+ 

@@ -1,19 +1,18 @@
 import React, {useState, useEffect} from "react";
+import './index.css';
 
-const TimePicker = ()=>{
+const TimePicker = () => {
 
   let [countSecond, setCountSecond ] = useState(0)
   let [countMinute, setCountMinute ] = useState(0)
 
   useEffect(() => {
     if (countMinute === 60) {
-      setCountMinute(countMinute = "Харэ!")
-    } 
-    else if (countMinute ==="Харэ!1") {
-      setCountMinute(countMinute = + 0)
+      setCountMinute(countMinute = 0)
     } 
     else if (countMinute === -1) {
-      setCountMinute(countMinute = 0)
+      setCountMinute(countMinute = 59)
+      setCountSecond(countSecond = 59)
     }
   });
 
