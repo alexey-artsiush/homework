@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Emojis from "./components/Emoji"
-
+import TimePicker from "./components/TimePicker"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Emojis/>
+    <TimePicker/>
   </React.StrictMode>,
-  document.getElementById('root')
 );
-
