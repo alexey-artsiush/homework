@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  width: 20%;
+  outline: solid rgb(134, 134, 134);
+  border-radius: 20px;
+}
+
+h2 {
+  margin: 5%;
+}
+
+h4 {
+  margin: 5%;
+}
+
+.footer {
+  margin-top: 10px;
+  outline: solid rgb(134, 134, 134);
+  border-radius: 0 0 20px 20px;
+}
+
+.nav {
+  margin-bottom: 10px;
+  outline: solid rgb(134, 134, 134);
+  border-radius: 20px 20px 0 0;
+}
+
+.ingredient {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 1% 3%;
+}
+
+
+

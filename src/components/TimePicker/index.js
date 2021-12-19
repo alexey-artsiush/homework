@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import "./index.css"
 
 const TimePicker = ()=>{
 
@@ -13,7 +14,8 @@ const TimePicker = ()=>{
       setCountMinute(countMinute = + 0)
     } 
     else if (countMinute === -1) {
-      setCountMinute(countMinute = 0)
+      setCountMinute(countMinute = 59)
+      setCountSecond(countSecond = 59)
     }
   });
 
